@@ -1,0 +1,225 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../font/icomoon.eot?es3l1');
+	src:url('../font/icomoon.eot?#iefixes3l1') format('embedded-opentype'),
+		url('../font/icomoon.ttf?es3l1') format('truetype'),
+		url('../font/icomoon.woff?es3l1') format('woff'),
+		url('../font/icomoon.svg?es3l1#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+	content: "\e9bd";
+}
+.icon-crz:before {
+	content: "\e9da";
+}
+.icon-gp:before {
+	content: "\ea88";
+}
+.icon-fb:before {
+	content: "\ea8c";
+}
+.icon-tt:before {
+	content: "\ea91";
+}
+
+html
+{
+	font-family: Arial;
+	background-color: #FFF;
+}
+a
+{
+	text-decoration: none;
+}
+
+body
+{
+	margin: 1em;
+	border: 1px solid #BCBCBC;
+	background-color: #F0F0F0;
+}
+
+header
+{
+	background-color: #FFF;
+	padding: 1em;
+	overflow: hidden;
+
+}
+
+h1
+{
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #929292;
+	font-size: 1em;
+	margin: 0px;
+	float: left;
+}
+
+h2
+{
+	text-transform: uppercase;
+	font-weight: normal;
+	margin: 0px;
+	font-size: 2em;
+	color: #929292;
+}
+
+nav
+{
+	float: right;
+
+}
+	.icon-menu
+	{
+		color: #2FC1C1;
+		font-size: 1.5em;
+	}
+
+.trabajos
+{
+	margin: 0 auto;
+	margin: 2em 1em 1em 1em;
+	text-align: center;
+}
+	.trabajo
+	{
+		margin-top: 1em;
+	}
+
+	.trabajo img
+	{
+		width: 100%
+	}
+
+	.datos-trabajo
+	{
+		font-size: 0px;
+		background-color: #2FC1C1;
+		color: #FFF;
+		overflow: hidden;
+	}
+
+		.datos-trabajo .nombre-trabajo
+		{
+			width: 12rem;
+			margin-top: .4rem;
+			float: left;
+		}
+		.datos-trabajo .nombre-trabajo> p
+		{
+			font-size: 1rem;
+		}
+
+		.datos-trabajo a
+		{
+			background-color: #F97068;
+			color: #FFF;
+			font-size: 1rem;
+			padding: .5em 1em;
+			float: right;
+		}
+			.datos-trabajo a p
+			{
+				margin: 0px;
+			}
+			.datos-trabajo a span
+			{
+				font-size: 1.5rem;
+			}
+.about
+{
+	background-color: #2FC1C1;
+	color: #FFF;
+	padding: 2em 1em;
+}
+	.about h2
+	{
+		color: #FFF;
+		text-align: center;
+	}
+
+.redes a
+{
+	color: #FFF;
+	display: block;
+	font-size: 2em;
+	padding: .3em 0em;
+	text-align: center;
+}
+
+	.redes .tt
+	{
+		background-color: #00E4FF;
+	}
+
+	.redes .fb
+	{
+		background-color: #464F6E;
+	}
+
+	.redes .gp
+	{
+		background-color: #D81B5F;
+	}
+
+
+.contacto
+{
+	text-align: center;
+	padding: 0 1em;
+}
+	.contacto h2
+	{
+		margin-top: 1em;
+	}
+
+	.contacto input
+	{
+		border: 0px;
+		margin-bottom: 1em;
+		width: 100%;
+	}
+
+	.contacto textarea
+	{
+		border: 0px;
+		margin-bottom: 1em;
+		width: 98%;
+	}
+
+	.contacto .botton
+	{
+		background-color: #464F6E;
+		padding: 1em 0em;
+		color: #FFF;
+		border-radius: 5px;
+	}
+
+footer
+{
+	background-color: #2C2F42;
+	text-align: center;
+	color: #FFF;
+	padding: .5em 0em;
+	font-size: .8em;
+}
+
