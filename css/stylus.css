@@ -57,28 +57,28 @@ body
 header
 {
 	background-color: #FFF;
-	padding: 1em;
 	overflow: hidden;
+	padding: 1em;
 
 }
 
 h1
 {
-	text-transform: uppercase;
-	font-weight: normal;
 	color: #929292;
-	font-size: 1em;
-	margin: 0px;
 	float: left;
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0px;
+	text-transform: uppercase;
 }
 
 h2
 {
-	text-transform: uppercase;
+	color: #929292;
+	font-size: 2em;
 	font-weight: normal;
 	margin: 0px;
-	font-size: 2em;
-	color: #929292;
+	text-transform: uppercase;
 }
 
 nav
@@ -115,31 +115,36 @@ form
 
 	.datos-trabajo
 	{
-		font-size: 0px;
-		background-color: #2FC1C1;
 		color: #FFF;
-		overflow: hidden;
+		font-size: 0px;
 		margin-top: -4px;
+		overflow: hidden;
+		position: relative;
 	}
 
 		.datos-trabajo .nombre-trabajo
 		{
-			width: 12rem;
-			margin-top: .4rem;
-			float: left;
+			background-color: #2FC1C1;
+			display: inline-block;
+			left: 0;
+			position: absolute;
+			right: 60px;
 		}
-		.datos-trabajo .nombre-trabajo> p
-		{
-			font-size: 1rem;
-		}
+			.datos-trabajo .nombre-trabajo> p
+			{
+				font-size: 1rem;
+				padding: .5em;
+			}
 
 		.datos-trabajo a
 		{
 			background-color: #F97068;
 			color: #FFF;
-			font-size: 1rem;
-			padding: .5em 1em;
+			display: inline-block;
 			float: right;
+			font-size: 1rem;
+			min-width: 28px;
+			padding: .5em 1em;
 		}
 			.datos-trabajo a p
 			{
@@ -188,8 +193,8 @@ form
 
 .contacto
 {
-	text-align: center;
 	padding: 0 1em;
+	text-align: center;
 }
 	.contacto h2
 	{
@@ -200,8 +205,8 @@ form
 	{
 		border: 0px;
 		margin-bottom: 1em;
-		width: 100%;
 		padding: .5em 0em;
+		width: 100%;
 	}
 
 	.contacto textarea
@@ -214,17 +219,17 @@ form
 	.contacto .botton
 	{
 		background-color: #464F6E;
-		padding: 1em 0em;
-		color: #FFF;
 		border-radius: 5px;
+		color: #FFF;
+		padding: 1em 0em;
 	}
 
 footer
 {
 	background-color: #2C2F42;
-	text-align: center;
 	color: #FFF;
-	padding: .5em 0em;
 	font-size: .8em;
+	padding: .5em 0em;
+	text-align: center;
 }
 
