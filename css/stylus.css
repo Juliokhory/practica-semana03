@@ -55,10 +55,32 @@ body
 header
 {
 	background-color: #FFF;
+	max-width: 1024px;
 	overflow: hidden;
+	position: relative;
 	padding: 1em;
-
 }
+
+h1
+{
+	color: #929292;
+	font-size: 1em;
+	font-weight: 300;
+	margin: 0px;
+	text-transform: uppercase;
+	float: left;
+}
+
+nav
+{
+	float: right;
+}
+	nav a
+
+	{
+		width: 25px;
+		height: 25px
+	}
 
 .menu ul
 {
@@ -75,7 +97,7 @@ header
 		text-transform: uppercase;
 		color: #929292;
 		font-size: 1em;
-		padding: 3em 1em;
+		padding: 2em 1.5em;
 	}
 	.menu li a:hover
 	{
@@ -83,15 +105,7 @@ header
 		color: #FFF;
 	}
 
-h1
-{
-	color: #929292;
-	float: left;
-	font-size: 1em;
-	font-weight: 300;
-	margin: 0px;
-	text-transform: uppercase;
-}
+
 
 h2
 {
@@ -102,10 +116,6 @@ h2
 	text-transform: uppercase;
 }
 
-nav
-{
-	float: right;
-}
 
 form
 {
@@ -120,7 +130,7 @@ form
 .trabajos
 {
 	margin: 0 auto;
-	margin: 2em 1em 2em 1em;
+	margin: 0em 1em 2em 1em;
 	text-align: center;
 }
 	.trabajo
@@ -136,35 +146,34 @@ form
 	.datos-trabajo
 	{
 		color: #FFF;
-		font-size: 0px;
-		margin-top: -4px;
+		background-color: #2FC1C1;
 		overflow: hidden;
 		position: relative;
+		height: 100%;
 	}
 
 		.datos-trabajo .nombre-trabajo
 		{
-			background-color: #2FC1C1;
-			display: inline-block;
 			left: 0;
 			position: absolute;
 			right: 60px;
+			top: 50%;
+			transform: translateY(-50%);
 		}
-			.datos-trabajo .nombre-trabajo> p
+			.datos-trabajo .nombre-trabajo > p
 			{
 				font-size: 1rem;
-				padding: .5em;
+				margin: 0;
 			}
 
 		.datos-trabajo a
 		{
 			background-color: #F97068;
 			color: #FFF;
-			display: inline-block;
 			float: right;
 			font-size: 1rem;
-			min-width: 28px;
-			padding: .5em 1em;
+			min-width: 44px;
+			padding: .7em .5em .5em;
 		}
 			.datos-trabajo a p
 			{
@@ -186,15 +195,27 @@ form
 		text-align: center;
 	}
 
+.redes
+{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
 .redes a
 {
 	color: #FFF;
 	display: block;
 	font-size: 2em;
-	padding: .3em 0em;
+	position: relative;
+	padding: .3em 0em .1em;
 	text-align: center;
 }
-
+	.redes a span
+	{
+		top: 50%;
+		transform: translateY(-50%);
+	}
 	.redes .tt
 	{
 		background-color: #00E4FF;
@@ -213,13 +234,13 @@ form
 
 .contacto
 {
-	padding: 0 1em;
+	padding: 2em 1em;
 	background-color: #F0F0F0;
 	text-align: center;
 }
 	.contacto h2
 	{
-		margin: 1em 0em .5em 0em;
+		margin-bottom: .5em;
 	}
 
 	.contacto input
@@ -259,33 +280,33 @@ footer
 	display: none;
 }
 
-@media only screen and (min-width:568px){
+@media only screen and (min-width:668px){
 
 	header
 	{
-		position: relative;
+		margin: 0 auto;
+		overflow: hidden;
+		max-width: 991px;
+		height: 51px;
 	}
+
 	h1
 	{
 		font-size: 1.5em;
 		display: inline-block;
-		float: none;
-		padding: 1em;
+		padding: .5em 0 1em;
 	}
 	nav
 	{
 		display: inline-block;
-		float: none;
 		position: absolute;
-		margin-top: .8em;
-		padding-right: 1em;
+		margin-top: 1em;
 		right: 0;
 	}
 
-	header
+	nav ul
 	{
-		margin: 0;
-		padding: 0;
+		margin: 0px;
 	}
 
 	.icon-menu
@@ -305,10 +326,16 @@ footer
 
 	.trabajos
 	{
+		font-size: 0px;
 		background-color: #F0F0F0;
-		padding: 3em;
+		padding: 3rem;
 		margin: 0;
 	}
+		.trabajos h2
+		{
+			font-size: 3rem;
+			margin-bottom: 1.5rem;
+		}
 
 	h2
 	{
@@ -320,9 +347,8 @@ footer
 
 	.trabajo
 	{
-		font-size: 0;
 		display: inline-block;
-		margin-right: 4%;
+		margin-right: 5%;
 		width: 30%;
 	}
 
@@ -347,6 +373,7 @@ footer
 	.about p
 	{
 		font-size: 1.4em;
+		margin: 0;
 	}
 
 	.redes
@@ -374,9 +401,10 @@ footer
 	  background-color: #464F6E;
 	  border-radius: 5px;
 	  color: #FFF;
-	  padding: 1em 2em;
-	  font-size: 1.3em;
+	  padding: 1rem 2.5rem;
+	  font-size: 1.3rem;
 	  width: auto;
+		margin: 0px;
 	}
 
 }
