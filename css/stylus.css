@@ -71,6 +71,27 @@
 {
 	margin: 0;
 }
+.color_gris_oscuro
+{
+	color: #929292;
+}
+.bgcolor_gris_claro
+{
+	background-color: #F0F0F0;
+}
+.bgcolor_verde
+{
+	background-color: #2FC1C1;
+}
+.color_verde
+{
+	color: #2FC1C1;
+}
+.color_blanco
+{
+	color: #FFF;
+}
+
 a
 {
 	text-decoration: none;
@@ -78,23 +99,21 @@ a
 
 body
 {
-	background-color: #F0F0F0;
 	font-family: 'Roboto', sans-serif;
-	background-color: #FFF;
 }
 
 header
 {
-	background-color: #FFF;
 	max-width: 1024px;
 	padding: 1em;
 }
-
+h1, h2
+{
+	font-weight: 300;
+}
 h1
 {
-	color: #929292;
 	font-size: 1em;
-	font-weight: 300;
 }
 
 .menu li
@@ -103,8 +122,6 @@ h1
 }
 .menu li a
 {
-	color: #929292;
-	font-size: 1em;
 	padding: 2em 1.5em;
 }
 .menu li a:hover
@@ -115,14 +132,11 @@ h1
 
 h2
 {
-	color: #929292;
 	font-size: 2em;
-	font-weight: 300;
 }
 
 .icon-menu
 {
-	color: #2FC1C1;
 	font-size: 1.5em;
 }
 
@@ -147,8 +161,6 @@ h2
 
 	.datos-trabajo
 	{
-		color: #FFF;
-		background-color: #2FC1C1;
 		top:-4px;
 	}
 
@@ -168,7 +180,6 @@ h2
 		.datos-trabajo a
 		{
 			background-color: #F97068;
-			color: #FFF;
 			font-size: 1rem;
 			min-width: 44px;
 			padding: .7em .5em .5em;
@@ -179,15 +190,9 @@ h2
 			}
 .about
 {
-	background-color: #2FC1C1;
-	color: #FFF;
 	padding: 2em 1em;
 	font-weight: 300;
 }
-	.about h2
-	{
-		color: #FFF;
-	}
 
 .redes
 {
@@ -197,7 +202,6 @@ h2
 
 	.redes a
 	{
-		color: #FFF;
 		display: block;
 		font-size: 2em;
 		padding: .3em 0em .1em;
@@ -221,7 +225,6 @@ h2
 .contacto
 {
 	padding: 2em 1em;
-	background-color: #F0F0F0;
 }
 	.contacto h2
 	{
@@ -247,14 +250,12 @@ h2
 	{
 		background-color: #464F6E;
 		border-radius: 5px;
-		color: #FFF;
 		padding: 1em 0em;
 	}
 
 footer
 {
 	background-color: #2C2F42;
-	color: #FFF;
 	font-size: .8em;
 	padding: .5em 0em;
 }
@@ -303,6 +304,10 @@ footer
 		margin: 0 auto;
 	}
 
+	.datos-trabajo
+	{
+		top: 0;
+	}
 	.trabajos
 	{
 		font-size: 0px;
