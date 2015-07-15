@@ -38,7 +38,39 @@
 .icon-tt:before {
 	content: "\ea91";
 }
-
+/* clases oocss */
+.dnone
+{
+	display: none;
+}
+.fright
+{
+	float: right;
+}
+.fleft
+{
+	float: left;
+}
+.prelative
+{
+	position: relative;
+}
+.tmayusculas
+{
+	text-transform: uppercase;
+}
+.tacenter
+{
+	text-align: center;
+}
+.ofhiden
+{
+	overflow: hidden;
+}
+.smargin
+{
+	margin: 0;
+}
 a
 {
 	text-decoration: none;
@@ -48,7 +80,6 @@ body
 {
 	background-color: #F0F0F0;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
 	background-color: #FFF;
 }
 
@@ -56,8 +87,6 @@ header
 {
 	background-color: #FFF;
 	max-width: 1024px;
-	overflow: hidden;
-	position: relative;
 	padding: 1em;
 }
 
@@ -66,77 +95,50 @@ h1
 	color: #929292;
 	font-size: 1em;
 	font-weight: 300;
-	margin: 0px;
-	text-transform: uppercase;
-	float: left;
 }
 
-nav
+.menu li
 {
-	float: right;
+	display: inline-block;
 }
-	nav a
-
-	{
-		width: 25px;
-		height: 25px
-	}
-
-.menu ul
+.menu li a
 {
-	margin: 0;
-	padding: 0;
-	float: right;
+	color: #929292;
+	font-size: 1em;
+	padding: 2em 1.5em;
 }
-	.menu li
-	{
-		display: inline-block;
-	}
-	.menu li a
-	{
-		text-transform: uppercase;
-		color: #929292;
-		font-size: 1em;
-		padding: 2em 1.5em;
-	}
-	.menu li a:hover
-	{
-		background-color: #2FC1C1;
-		color: #FFF;
-	}
-
-
+.menu li a:hover
+{
+	background-color: #2FC1C1;
+	color: #FFF;
+}
 
 h2
 {
 	color: #929292;
 	font-size: 2em;
-	font-weight: normal;
-	margin: 0px;
-	text-transform: uppercase;
+	font-weight: 300;
 }
 
-
-form
+.icon-menu
 {
-	overflow: hidden;
+	color: #2FC1C1;
+	font-size: 1.5em;
 }
-	.icon-menu
-	{
-		color: #2FC1C1;
-		font-size: 1.5em;
-	}
 
 .trabajos
 {
 	margin: 0 auto;
 	margin: 0em 1em 2em 1em;
-	text-align: center;
 }
 	.trabajo
 	{
 		margin-top: 1em;
 	}
+		.trabajo a
+		{
+			display: table;
+		}
 
 	.trabajo img
 	{
@@ -147,9 +149,7 @@ form
 	{
 		color: #FFF;
 		background-color: #2FC1C1;
-		overflow: hidden;
-		position: relative;
-		height: 100%;
+		top:-4px;
 	}
 
 		.datos-trabajo .nombre-trabajo
@@ -163,22 +163,16 @@ form
 			.datos-trabajo .nombre-trabajo > p
 			{
 				font-size: 1rem;
-				margin: 0;
 			}
 
 		.datos-trabajo a
 		{
 			background-color: #F97068;
 			color: #FFF;
-			float: right;
 			font-size: 1rem;
 			min-width: 44px;
 			padding: .7em .5em .5em;
 		}
-			.datos-trabajo a p
-			{
-				margin: 0px;
-			}
 			.datos-trabajo a span
 			{
 				font-size: 1.5rem;
@@ -188,33 +182,25 @@ form
 	background-color: #2FC1C1;
 	color: #FFF;
 	padding: 2em 1em;
+	font-weight: 300;
 }
 	.about h2
 	{
 		color: #FFF;
-		text-align: center;
 	}
 
 .redes
 {
 	display: table;
 	width: 100%;
-	height: 100%;
 }
 
-.redes a
-{
-	color: #FFF;
-	display: block;
-	font-size: 2em;
-	position: relative;
-	padding: .3em 0em .1em;
-	text-align: center;
-}
-	.redes a span
+	.redes a
 	{
-		top: 50%;
-		transform: translateY(-50%);
+		color: #FFF;
+		display: block;
+		font-size: 2em;
+		padding: .3em 0em .1em;
 	}
 	.redes .tt
 	{
@@ -236,7 +222,6 @@ form
 {
 	padding: 2em 1em;
 	background-color: #F0F0F0;
-	text-align: center;
 }
 	.contacto h2
 	{
@@ -272,12 +257,6 @@ footer
 	color: #FFF;
 	font-size: .8em;
 	padding: .5em 0em;
-	text-align: center;
-}
-
-.dnone
-{
-	display: none;
 }
 
 @media only screen and (min-width:668px){
