@@ -92,6 +92,15 @@
 	color: #FFF;
 }
 
+.trabajos, .about, .contacto
+{
+	padding: 2em 1em;
+}
+h1, h2
+{
+	font-weight: 300;
+}
+
 a
 {
 	text-decoration: none;
@@ -106,10 +115,7 @@ header
 {
 	max-width: 1024px;
 	padding: 1em;
-}
-h1, h2
-{
-	font-weight: 300;
+	overflow: hidden;
 }
 h1
 {
@@ -133,6 +139,7 @@ h1
 h2
 {
 	font-size: 2em;
+	margin:0em 0em .5em;
 }
 
 .icon-menu
@@ -140,25 +147,18 @@ h2
 	font-size: 1.5em;
 }
 
-.trabajos
+.trabajo
 {
-	margin: 0 auto;
-	margin: 0em 1em 2em 1em;
+	margin-bottom: 1em;
 }
-	.trabajo
+	.trabajo a
 	{
-		margin-top: 1em;
+		display: table;
 	}
-		.trabajo a
-		{
-			display: table;
-		}
-
 	.trabajo img
 	{
 		width: 100%
 	}
-
 	.datos-trabajo
 	{
 		top:-4px;
@@ -190,7 +190,6 @@ h2
 			}
 .about
 {
-	padding: 2em 1em;
 	font-weight: 300;
 }
 
@@ -199,7 +198,6 @@ h2
 	display: table;
 	width: 100%;
 }
-
 	.redes a
 	{
 		display: block;
@@ -219,16 +217,6 @@ h2
 	.redes .gp
 	{
 		background-color: #D81B5F;
-	}
-
-
-.contacto
-{
-	padding: 2em 1em;
-}
-	.contacto h2
-	{
-		margin-bottom: .5em;
 	}
 
 	.contacto input
@@ -262,6 +250,11 @@ footer
 
 @media only screen and (min-width:668px){
 
+	.dinline_block_d
+	{
+		display: inline-block;
+	}
+
 	header
 	{
 		margin: 0 auto;
@@ -269,16 +262,13 @@ footer
 		max-width: 991px;
 		height: 51px;
 	}
-
 	h1
 	{
 		font-size: 1.5em;
-		display: inline-block;
 		padding: .5em 0 1em;
 	}
 	nav
 	{
-		display: inline-block;
 		position: absolute;
 		margin-top: 1em;
 		right: 0;
@@ -304,34 +294,27 @@ footer
 		margin: 0 auto;
 	}
 
-	.datos-trabajo
-	{
-		top: 0;
-	}
-	.trabajos
-	{
-		font-size: 0px;
-		background-color: #F0F0F0;
-		padding: 3rem;
-		margin: 0;
-	}
-		.trabajos h2
-		{
-			font-size: 3rem;
-			margin-bottom: 1.5rem;
-		}
-
 	h2
 	{
 		text-align: left;
-		font-size: 3em;
+		font-size: 3rem;
 		margin-bottom: .5em;
 		font-weight: 300;
 	}
 
+	.datos-trabajo
+	{
+		top: 0px;
+	}
+
+	.trabajos
+	{
+		font-size: 0px;
+		padding: 3rem;
+	}
+
 	.trabajo
 	{
-		display: inline-block;
 		margin-right: 5%;
 		width: 30%;
 	}
@@ -340,26 +323,18 @@ footer
 	{
 		margin-right: 0;
 	}
-
 	.about h2
 	{
 		text-align: left;
-		font-weight: 300;
 	}
-
 	.about, .contacto
 	{
 		padding: 3em;
-		margin: 0;
-		font-weight: 300;
 	}
-
 	.about p
 	{
 		font-size: 1.4em;
-		margin: 0;
 	}
-
 	.redes
 	{
 		margin: 0 auto;
@@ -369,22 +344,16 @@ footer
 		float: left;
 		width: 33.33%;
 	}
-
 	.redes a span
 	{
 		font-size: 1em;
 	}
 	.contacto
 	{
-		background-color: #F0F0F0;
 		text-align: right;
 	}
-
 	.contacto .botton
 	{
-	  background-color: #464F6E;
-	  border-radius: 5px;
-	  color: #FFF;
 	  padding: 1rem 2.5rem;
 	  font-size: 1.3rem;
 	  width: auto;
