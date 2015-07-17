@@ -39,321 +39,274 @@
 	content: "\ea91";
 }
 /* clases oocss */
-.dnone
-{
+.dnone{
 	display: none;
 }
-.fright
-{
+.fright{
 	float: right;
 }
-.fleft
-{
+.fleft{
 	float: left;
 }
-.prelative
-{
+.prelative{
 	position: relative;
 }
-.tmayusculas
-{
+.tmayusculas{
 	text-transform: uppercase;
 }
-.tacenter
-{
+.tacenter{
 	text-align: center;
 }
-.ofhiden
-{
+.ofhiden{
 	overflow: hidden;
 }
-.smargin
-{
+.smargin{
 	margin: 0;
 }
-.color_gris_oscuro
-{
+.color_gris_oscuro{
 	color: #929292;
 }
-.bgcolor_gris_claro
-{
+.bgcolor_gris_claro{
 	background-color: #F0F0F0;
 }
-.bgcolor_verde
-{
+.bgcolor_verde{
 	background-color: #2FC1C1;
 }
-.color_verde
-{
+.color_verde{
 	color: #2FC1C1;
 }
-.color_blanco
-{
+.color_blanco{
 	color: #FFF;
 }
-
-.trabajos, .about, .contacto
-{
+.psection{
 	padding: 2em 1em;
 }
-h1, h2
-{
+
+h1, h2{
 	font-weight: 300;
 }
 
-a
-{
+a{
 	text-decoration: none;
 }
 
-body
-{
+body{
 	font-family: 'Roboto', sans-serif;
 }
 
-header
-{
-	max-width: 1024px;
+header{
+	max-width: 64em;
 	padding: 1em;
 	overflow: hidden;
 }
-h1
-{
+h1{
 	font-size: 1em;
 }
 
-.menu li
-{
+.menu li{
 	display: inline-block;
 }
-.menu li a
-{
+.menu li a{
 	padding: 2em 1.5em;
 }
-.menu li a:hover
-{
+.menu li a:hover{
 	background-color: #2FC1C1;
 	color: #FFF;
 }
 
-h2
-{
+h2{
 	font-size: 2em;
 	margin:0em 0em .5em;
 }
 
-.icon-menu
-{
+.icon-menu{
 	font-size: 1.5em;
 }
 
-.trabajo
-{
-	margin-bottom: 1em;
+.trabajo{
+	margin-bottom: 1rem;
 }
-	.trabajo a
-	{
-		display: table;
-	}
-	.trabajo img
-	{
-		width: 100%
-	}
-	.datos-trabajo
-	{
-		top:-4px;
-	}
+.trabajo a{
+	display: block;
+	font-size: 0;
+}
+.trabajo img{
+	width: 100%
+}
 
-		.datos-trabajo .nombre-trabajo
-		{
-			left: 0;
-			position: absolute;
-			right: 60px;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-			.datos-trabajo .nombre-trabajo > p
-			{
-				font-size: 1rem;
-			}
+.datos-trabajo .nombre-trabajo{
+	left: 0;
+	position: absolute;
+	right: 60px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.datos-trabajo .nombre-trabajo > p{
+	font-size: 1rem;
+}
 
-		.datos-trabajo a
-		{
-			background-color: #F97068;
-			font-size: 1rem;
-			min-width: 44px;
-			padding: .7em .5em .5em;
-		}
-			.datos-trabajo a span
-			{
-				font-size: 1.5rem;
-			}
-.about
-{
+.datos-trabajo a{
+	background-color: #F97068;
+	font-size: 1rem;
+	min-width: 2.75rem;
+	padding: .7em .5em .5em;
+}
+.datos-trabajo a span{
+	font-size: 1.5rem;
+}
+.about{
 	font-weight: 300;
 }
 
-.redes
-{
+.redes{
 	display: table;
 	width: 100%;
 }
-	.redes a
-	{
-		display: block;
-		font-size: 2em;
-		padding: .3em 0em .1em;
-	}
-	.redes .tt
-	{
-		background-color: #00E4FF;
-	}
+.redes a{
+	display: block;
+	font-size: 2em;
+	padding: .3em 0em .1em;
+}
+.redes .tt{
+	background-color: #00E4FF;
+}
 
-	.redes .fb
-	{
-		background-color: #464F6E;
-	}
+.redes .fb{
+	background-color: #464F6E;
+}
 
-	.redes .gp
-	{
-		background-color: #D81B5F;
-	}
+.redes .gp{
+	background-color: #D81B5F;
+}
 
-	.contacto input
-	{
-		border: 0px;
-		margin-bottom: 1em;
-		padding: .5em 0em;
-		width: 100%;
-	}
+.contacto input{
+	border: 0px;
+	margin-bottom: 1em;
+	padding: .5em 0em;
+	width: 100%;
+}
 
-	.contacto textarea
-	{
-		border: 0px;
-		margin-bottom: 1em;
-		width: 100%;
-	}
+.contacto textarea{
+	border: 0px;
+	margin-bottom: 1em;
+	width: 100%;
+}
 
-	.contacto .botton
-	{
-		background-color: #464F6E;
-		border-radius: 5px;
-		padding: 1em 0em;
-	}
+.contacto .botton{
+	background-color: #464F6E;
+	border-radius: 5px;
+	padding: 1em 0em;
+}
 
-footer
-{
+footer{
 	background-color: #2C2F42;
 	font-size: .8em;
 	padding: .5em 0em;
 }
 
-@media only screen and (min-width:668px){
+@media only screen and (min-width:37.5em){
 
-	.dinline_block_d
-	{
+	.trabajos{
+		text-align: left;
+	}
+	.trabajo{
+		display: inline-block;
+		width:47%;
+		margin-right: 5%;
+	}
+	.trabajo:nth-child(odd){
+		margin-right: 0px;
+	}
+}
+
+@media only screen and (min-width:50em){
+
+	.dinline_block_d{
 		display: inline-block;
 	}
 
-	header
-	{
+	header{
 		margin: 0 auto;
 		overflow: hidden;
-		max-width: 991px;
-		height: 51px;
+		max-width: 62em;
+		height: 3.2em;
 	}
-	h1
-	{
+	h1{
 		font-size: 1.5em;
 		padding: .5em 0 1em;
 	}
-	nav
-	{
+	nav{
 		position: absolute;
 		margin-top: 1em;
 		right: 0;
 	}
 
-	nav ul
-	{
+	nav ul{
 		margin: 0px;
 	}
 
-	.icon-menu
-	{
+	.icon-menu{
 		display: none;
 	}
-	.dnone
-	{
+	.dnone{
 		display: block;
 	}
 
-	main
-	{
-		max-width: 1024px;
+	main{
+		max-width: 64em;
 		margin: 0 auto;
 	}
 
-	h2
-	{
+	h2{
 		text-align: left;
 		font-size: 3rem;
 		margin-bottom: .5em;
 		font-weight: 300;
 	}
 
-	.datos-trabajo
-	{
+	.datos-trabajo{
 		top: 0px;
 	}
 
-	.trabajos
-	{
+	.trabajos{
 		font-size: 0px;
 		padding: 3rem;
 	}
 
-	.trabajo
-	{
+	.trabajo{
 		margin-right: 5%;
 		width: 30%;
 	}
 
-	.trabajo:last-child
-	{
+	.trabajo:nth-child(odd){
+		margin-right: 5%;
+	}
+	.trabajo:nth-child(3n+1){
 		margin-right: 0;
 	}
-	.about h2
-	{
+	.about h2{
 		text-align: left;
 	}
-	.about, .contacto
-	{
+	.about, .contacto{
 		padding: 3em;
 	}
-	.about p
-	{
+	.about p{
 		font-size: 1.4em;
 	}
-	.redes
-	{
+	.redes{
 		margin: 0 auto;
 	}
-	.redes a
-	{
+	.redes a{
 		float: left;
 		width: 33.33%;
 	}
-	.redes a span
-	{
+	.redes a span{
 		font-size: 1em;
 	}
-	.contacto
-	{
+	.contacto{
 		text-align: right;
 	}
-	.contacto .botton
-	{
+	.contacto .botton{
 	  padding: 1rem 2.5rem;
 	  font-size: 1.3rem;
 	  width: auto;
