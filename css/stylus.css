@@ -122,7 +122,6 @@ h2{
 .icon-menu{
 	font-size: 1.5em;
 }
-
 .trabajo{
 	margin-bottom: 1rem;
 }
@@ -133,23 +132,27 @@ h2{
 .trabajo img{
 	width: 100%
 }
-
-.datos-trabajo .nombre-trabajo{
-	left: 0;
-	position: absolute;
-	right: 60px;
-	top: 50%;
-	transform: translateY(-50%);
+.datos-trabajo
+{
+	display: table;
+	width:100%;
 }
-.datos-trabajo .nombre-trabajo > p{
+.cderecha, .cizquierda{
+  display: table-cell;
+  vertical-align: middle;
 	font-size: 1rem;
 }
-
+.cderecha{
+  width: 20%;
+		background-color: #F97068;
+}
+.cizquierda{
+  width: 80%;
+}
 .datos-trabajo a{
-	background-color: #F97068;
+	display: block;
+	padding:.5rem;
 	font-size: 1rem;
-	min-width: 2.75rem;
-	padding: .7em .5em .5em;
 }
 .datos-trabajo a span{
 	font-size: 1.5rem;
@@ -157,7 +160,6 @@ h2{
 .about{
 	font-weight: 300;
 }
-
 .redes{
 	display: table;
 	width: 100%;
